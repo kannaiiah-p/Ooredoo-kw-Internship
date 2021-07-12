@@ -1,0 +1,66 @@
+// No media query necessary for xl breakpoint as it has no upper bound on its width
+
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(lg) {
+   
+
+}
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) {
+   
+}
+
+// Medium devices (iPad - Landscape)
+@media (max-width: 1024px) {
+    
+}
+
+// Medium devices (iPad - portright)
+@media (max-width: 768px) {
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {
+    
+
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) {
+   
+
+}
+
+//Samsung  devices (portrait phones, less than 414px)
+@media (max-width: 414px) {
+
+
+}
+
+
+//Mi  devices (portrait phones, less than 393px)
+@media (max-width: 393px) {
+
+
+}
+
+// iOS 6 devices (portrait phones, less than 375px)
+@media (max-width: 375px) {
+ 
+
+}
+
+// Android devices (portrait phones, less than 360px)
+@media (max-width: 360px) {
+    
+
+
+}
+
+// iOS 5 devices (portrait phones, less than 320px)
+@media (max-width: 320px) {
+  
+}

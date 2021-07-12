@@ -1,0 +1,169 @@
+/* Buttons Starts*/
+
+
+
+.btn {
+  font-family: $noto-regular;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.btn-primary {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+  min-width: 150px;
+
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+  -webkit-box-shadow: 0 0 0 0rem rgba(38, 143, 255, 0);
+  box-shadow: 0 0 0 0rem rgba(38, 143, 255, 0);
+}
+
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0rem rgba(38, 143, 255, 0);
+  box-shadow: 0 0 0 0rem rgba(38, 143, 255, 0);
+}
+
+
+
+
+.btn-secondary {
+  color: $secondary;
+  background-color: $light-grey;
+  border-color: $light-grey;
+  min-width: 150px;
+}
+
+
+.btn-secondary:hover {
+  color: $secondary;
+  background-color: $light-grey;
+  border-color: $light-grey;
+  ;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+  color: $secondary;
+  background-color: $light-grey;
+  border-color: $light-grey;
+  -webkit-box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+  box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: $secondary;
+  background-color: $light-grey;
+  border-color: $light-grey;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
+  color: $secondary;
+  background-color: $light-grey;
+  border-color: $light-grey;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+  box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+}
+
+
+.btn-outline {
+  color: $secondary;
+  background-color: $white;
+  border-color: $secondary;
+  min-width: 150px;
+}
+
+
+.btn-outline:hover {
+  color: $secondary;
+  background-color: $white;
+  border-color: $secondary;
+}
+
+.btn-outline:focus,
+.btn-outline.focus {
+  color: $secondary;
+  background-color: $white;
+  border-color: $secondary;
+  -webkit-box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+  box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+}
+
+.btn-outline.disabled,
+.btn-outline:disabled {
+  color: $secondary;
+  background-color: $white;
+  border-color: $secondary;
+}
+
+.btn-outline:not(:disabled):not(.disabled):active,
+.btn-outline:not(:disabled):not(.disabled).active,
+.show>.btn-outline.dropdown-toggle {
+  color: $secondary;
+  background-color: $white;
+  border-color: $secondary;
+}
+
+.btn-outline:not(:disabled):not(.disabled):active:focus,
+.btn-outline:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+  box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+}
+
+
+
+a:not([href]):not([tabindex]) {
+  color: $white;
+}
+
+/* Button Ends*/
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// iOS 5 devices (portrait phones, less than 320px)
+@media (max-width: 320px) {}

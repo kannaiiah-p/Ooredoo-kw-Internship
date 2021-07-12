@@ -1,0 +1,251 @@
+.application-sec {
+
+    .appbg-sec {
+        display: flex;
+        align-items: flex-end;
+        height: 600px;
+        background-color: #F1F1F1;
+        margin-bottom: -580px;
+    }
+
+    .appmain-cont {
+        @extend %cardbox-shadow;
+        border-radius: 16px;
+        background-color: #fff;
+        min-height: 1000px;
+
+        .appinner-cont {
+            max-width: 450px;
+            margin: auto;
+            padding: 50px 25px;
+
+            .ban-text-sec {
+                margin-bottom: 25px;
+
+                .ooredoo-text {
+                    font-size: 16px;
+                    margin: 0;
+                    color: $primary;
+                    font-family: $heavy;
+                }
+
+                h1 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.file-bg {
+    padding: 15px;
+    background-color: #F9F9F9;
+    border-radius: 2px;
+    position: relative;
+    height: 125px;
+
+}
+
+.form-group {
+    label {
+        font-size: 14px;
+        color: $secondary;
+
+        span {
+            color: $primary;
+        }
+    }
+}
+
+.form-control::placeholder {
+    color: #CCCCCC;
+}
+
+.form-control {
+    border-radius: 2px;
+    border-color: #CCCCCC;
+    ;
+    color: $secondary;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #FFFFFF;
+    border-color: $secondary;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0rem rgba(237, 28, 36, 0);
+    box-shadow: 0 0 0 0rem rgba(237, 28, 36, 0);
+}
+
+/* kws-modal popups strart */
+.kws-modal {
+    .modal-content {
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .modal-icon {
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 20px;
+
+        img {
+            width: 70px;
+            height: auto;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .modal-header {
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+        border: 0px;
+    }
+
+    .modal-title {
+        font-family: $heavy;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .modal-body {
+        padding: 0px;
+        padding-bottom: 25px;
+    }
+
+    .modal-footer {
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+        border: 0px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        min-width: 140px;
+        margin: 0px 12px;
+    }
+
+    .support-text {
+        text-align: left;
+        color: $primary;
+    }
+
+
+    .group1 {
+        margin-bottom: 30px;
+    }
+}
+
+/* kws-modal popups end */
+
+
+
+
+.custom-file-label::after {
+    background: #99CC00;
+    border-radius: 25px !important;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 10px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    top: -60px;
+    border: 0;
+}
+
+.input-group-text {
+    background: #d5d5d5;
+    border-radius: 25px !important;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 10px;
+    padding: 10px;
+    color: #221E20;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    position: absolute;
+    left: 110px;
+    top: 2px;
+    border: 0;
+
+}
+
+.input-group>.custom-file {
+    display: block;
+}
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+    position: absolute;
+    top: 60px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px !important;
+}
+
+.form-close-img {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.custom-file-input {
+    top: 60px;
+}
+
+.file-sup {
+    position: absolute;
+    top: 35px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+/* 
+------------------------------------ */
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+    padding: 8px;
+    min-height: 130px;
+}
+
+.upload-btn-wrapper input[type=file] {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer
+}
+
+.btn-upload {
+    cursor: pointer
+}
+
+.btn-upload img {
+    width: 45px
+}

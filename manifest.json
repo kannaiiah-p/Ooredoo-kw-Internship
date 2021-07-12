@@ -1,0 +1,42 @@
+﻿{  
+  "icons": [
+    {
+      "src": "assets/images/app_img/72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/app_img/96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/app_img/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/app_img/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/app_img/256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/app_img/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }   
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",  
+  "start_url": "https://knwfbigdzy7wivxze72tfq-on.drv.tw/www.orangerbt.com/index.html",
+  "display": "standalone",
+   "orientation": "portrait",
+  "name": "Orange RBT", 
+  "short_name": "Orange RBT"
+}
+

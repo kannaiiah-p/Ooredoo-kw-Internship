@@ -1,0 +1,46 @@
+
+body {
+    position: relative;
+    min-height: 100vh;
+    -webkit-font-smoothing: auto;
+    font-family:  $noto-regular;
+    color: $secondary;
+    //transition: 1s all;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+.img-cont{
+    line-height: 0 !important;
+}
+
+//picture{height: 100%;}
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:not([href]):not([class]) {
+    color: $btn-color;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a:not([href]):not([class]):hover {
+    color: $btn-color-hover;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+

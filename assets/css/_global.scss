@@ -1,0 +1,34 @@
+//Global SCSS Files
+
+
+//1-HELPERS
+//*Example - variables, mixins, functions
+// ***Custom Variables should be in first position, Before the bootstrap SCSS
+@import 'imports/1-helpers/variables';
+@import 'imports/1-helpers/mixins';
+@import 'imports/1-helpers/functions';
+
+//2-TOOLS
+//Bootstrap v4.5.3
+@import 'imports/2-tools/bootstrap/bootstrap';
+//Bootstrap v4.5.3
+//@import 'imports/2-tools/swiper/swiper.scss';
+
+//3-BASICS
+//*Example - Global, Buttons, Links, Typography
+@import 'imports/3-basics/buttons';
+
+//4-LAYOUTS
+//*Example - Header, Footer, Swiper, All Big things
+
+@import 'imports/4-layout/header';
+@import 'imports/4-layout/footer';
+
+//5-MODULES
+//*Example - widgets, social logos, All small things
+
+
+//6-PAGES OR COMPONENTS
+//*Example - Pages or component related styles
+
+//Note: Saparated to conponents.sass for angular or page level saparation

@@ -1,0 +1,115 @@
+// GLOBAL MIXINS
+
+
+@mixin  multi-Truncate($font-size,$line-height,$lines-to-show) {  
+    display: block; 
+  display: -webkit-box;
+  //margin: 0 auto;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  //height: $font-size*$line-height*$lines-to-show;
+}
+
+
+@mixin border-arrows($bor-top,$bor-bot,$bor-left,$bor-right,$pos){
+  width: 0;
+  height: 0;
+  border-top: $bor-top; //15px solid transparent;
+  border-bottom: $bor-bot; //15px solid transparent;
+  border-left:$bor-left; //12px solid #fff;
+  border-right:$bor-right; 
+  position:$pos;// absolute;
+  
+  z-index: 99;
+
+}
+
+
+@mixin ellipsis-1line {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  @mixin ellipsis-2lines {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  @mixin ellipsis-3lines {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+
+
+
+
+
+// @extend %ooredoo-heavy;
+%ooredoo-heavy {
+  font-family: $heavy;
+}
+
+// @extend %img-bg-color-grey;
+%img-bg-color-grey {
+  background: $img-bg-color-grey;
+}
+
+// @extend %default-bg-image;
+%default-bg-image {
+  background-color: $default-bg;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(#{$service-assetPath}img-default.jpg);
+}
+
+
+// @extend %img-width-100;
+%img-width-100 {
+  width: 100%;
+}
+
+// @extend %flex-vertical-center;
+%flex-vertical-center{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+
+
+
+// @extend %cardbox-shadow;
+
+%cardbox-shadow {
+  box-shadow: 0 30px 50px 0#4C5C8829;
+  //background-color: $white;
+  border-radius:16px;
+}

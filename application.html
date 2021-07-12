@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ooredoo - Internship Application Form</title>
+    <!-- manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!--/* -- Brand Favicon -- */-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!--/* -- Custom CSS V 1.0 -- */-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+
+  <!--kanna st-->
+  <div class="clearfix"></div>
+
+  <div class="cus-form">
+      <form class="upl-section-new">
+
+          <!--upload-sec-01-->
+          <div class="form-group edit-profile-right" style="display:none">
+              <p>Explanation Video of Your Solution</p>
+              <div class="mtn-support-text">Kindly upload a screen recording of your project, showing all its features and functions. You can check the FAQs for a guide.</div>
+              <div class="upload-btn-wrapper">
+                  <div class="row">
+                      <div class="col-md-1">
+                          <div class="btn-upload"><img src="/images/mg-upload.svg" alt=""><span id="attach_hackathon_video" style="display:none;"></span></div>
+                          <input type="file" id="fileinput_hackathon_video" name="fileupload_video" />
+                      </div>
+                      <div class="col-md-11 upl-file-namesec">
+                          <div class="upl-wid-90">
+                              <div class="mpulse-filename">
+                                  <label id="fileListDetails_video" class="filedetails"> </label>
+                                  <span id="lblMessage_size_video" class="ulpsucessmeg"></span>
+                              </div>
+                              <!--errow message-->
+                              <div class="error-msg">
+                                  <div id="fileListDetails_Err_video" class="filedetails"></div>
+                              </div>
+                          </div>
+                          <div class="upl-wid-10">
+                              <label class="col-md-1 upl-delete-btn"> <a id="btnUpload_delete_video" value="Delete"> X </a></label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row upload-secrow" id="progress-bar-video" style="display:none;">
+                      <div class='col-md-11'>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                   aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                  0%
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="upload-btn-sec">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <!--upload btn-->
+                              <a id="btnUpload_video" value="Upload" class="btn btn-primary">Upload</a>
+                          </div>
+                          <div class="col-md-8">
+                              <!--sucess message-->
+                              <div class="lblmessage-row">
+                                  <label id="lblMessage_video" class="ulpsucessmeg"></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div>
+                          <div class="upl-supporttext"> Choose File Size 60-seconds limit .mp4, .avi, .webm, .3gp, etc. extensions. </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!--upload-sec-02-->
+          <div class="form-group edit-profile-left" id="div_indemnity">
+              <p>Signed indemnity form *</p>
+              <div class="mtn-support-text">Kindly confirm that the file to be uploaded is CORRECTLY FILLED. Entries with unfilled or improperly filled consent forms would be disregarded.</div>
+              <div class="upload-btn-wrapper">
+                  <div class="row">
+                      <div class="col-md-1">
+                          <div class="btn-upload">
+                              <img src="/images/mg-upload.svg" alt=""><span id="attach_hackathon_indemnity" style="display:none;"></span>
+                          </div>
+                          <input type="file" id="fileinput_hackathon_indemnity" name="fileupload_indemnity" />
+                      </div>
+                      <div class="col-md-11 upl-file-namesec">
+                          <div class="upl-wid-90">
+                              <div class="mpulse-filename">
+                                  <label id="fileListDetails_indemnity" class="filedetails"></label>
+                                  <span id="lblMessage_size_indemnity" class="ulpsucessmeg"></span>
+                              </div>
+                              <!--error message-->
+                              <div class="error-msg">
+                                  <div id="fileListDetails_Err_indemnity" class="filedetails"></div>
+                              </div>
+                          </div>
+                          <div class="upl-wid-10">
+                              <label class='col-md-1 upl-delete-btn'><a id="btnUpload_delete_indemnity" value="Delete"> X </a></label>
+                          </div>
+                          <div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row upload-secrow" id="progress-bar-indemnity" style="display:none;">
+                      <div class="col-md-11">
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                   aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                  0%
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class='upload-btn-sec'>
+                      <div class="row">
+                          <div class="col-md-4">
+                              <!--upload btn -->
+                              <a id="btnUpload_indemnity" value="Upload" class="btn btn-primary"> Upload </a>
+                          </div>
+                          <div class="col-md-8">
+                              <!--sucess message-->
+                              <div class="lblmessage-row">
+                                  <label id="lblMessage_indemnity" class="ulpsucessmeg"></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="upl-supporttext"> Choose File max 20mb limit extensions ".doc, .docx, .jpg, .png, .pdf etc." </div>
+                  </div>
+              </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <!--upload-03-->
+          @*<div class="form-group edit-profile-right" id="div_indemnity">
+              <p>Copy of Birth Certificate *</p>
+              <div class="mtn-support-text">Kindly confirm that the file to be uploaded is a VALID BIRTH CERTIFICATE.</div>
+              <div class="upload-btn-wrapper">
+                  <div class="row">
+                      <div class="col-md-1">
+                          <div class="btn-upload">
+                              <img src="/images/mg-upload.svg" alt=""><span id="attach_hackathon_dob" style="display:none;"></span>
+                          </div>
+                          <input type="file" id="fileinput_hackathon_dob" name="myfile" />
+                      </div>
+
+                      <div class="col-md-11 upl-file-namesec">
+                          <div class="upl-wid-90">
+                              <div class="mpulse-filename">
+                                  <label id="fileListDetails_dob" class="filedetails"> </label>
+                                  <span id="lblMessage_size_dob" class="ulpsucessmeg"></span>
+                              </div>
+                              <div class="error-msg">
+                                  <div id="fileListDetails_Err_dob" class="filedetails"></div>
+                              </div>
+                          </div>
+                          <div class="cupl-wid-10">
+                              <label class="col-md-1 upl-delete-btn"><a id="btnUpload_delete_dob" value="Delete"> X </a></label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row upload-secrow" id="progress-bar-dob" style="display:none;">
+                      <div class="col-md-11">
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                   aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                  0%
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="upload-btn-sec">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <!--upload btn-->
+                              <a id="btnUpload_dob" value="Upload" class="btn btn-primary">Upload</a>
+                          </div>
+                          <div class="col-md-8">
+                              <!--sucess messge-->
+                              <div class="lblmessage-row">
+                                  <label id="lblMessage_dob" class="ulpsucessmeg"></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="upl-supporttext"> Choose File max 20mb limit extensions ".doc, .docx, .jpg, .png, .pdf etc." </div>
+                  </div>
+              </div>
+          </div>*@
+
+          <!--upload-04-->
+          <div class="form-group edit-profile-left">
+              <p>Website or App Source Code</p>
+              <div class="mtn-support-text">Kindly put all necessary files in a zipped folder and upload.</div>
+              <div class="upload-btn-wrapper">
+                  <div class="row">
+                      <div class="col-md-1">
+                          <div class="btn-upload">
+                              <img src="/images/mg-upload.svg" alt=""><span id="attach_hackathon_sourceapp" style="display:none;"></span>
+                          </div>
+                          <input type="file" id="fileinput_hackathon_sourceapp" name="myfile" />
+                      </div>
+                      <div class="col-md-11 upl-file-namesec">
+                          <div class="upl-wid-90">
+                              <div class="mpulse-filename">
+                                  <label id="fileListDetails_sourceapp" class="filedetails"></label>
+                                  <span id="lblMessage_size_sourceapp" class="ulpsucessmeg"></span>
+                              </div>
+                              <!--error message-->
+                              <div class="error-msg">
+                                  <div id="fileListDetails_Err_sourceapp" class="filedetails"></div>
+                              </div>
+                          </div>
+                          <div class="upl-wid-10">
+                              <label class="col-md-1 upl-delete-btn"><a id="btnUpload_delete_sourceapp" value="Delete"> X </a></label>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                  </div>
+                  <div class="row upload-secrow" id="progress-bar-sourceapp" style="display:none;">
+                      <div class="col-md-11">
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                   aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                  0%
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="upload-btn-sec">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <a id="btnUpload_sourceapp" value="Upload" class="btn btn-primary"> Upload </a>
+                          </div>
+                          <div class="col-md-8">
+                              <!--sucess message-->
+                              <div class='lblmessage-row'>
+                                  <label id="lblMessage_sourceapp" class="ulpsucessmeg"></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="upl-supporttext"> Choose File Size 200MB limit "extension .zip allowed" </div>
+                  </div>
+              </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <!--upload-05-->
+          <div class="form-group edit-profile-right" id="div_apk">
+              <p>Upload APK *</p>
+              <div class="mtn-support-text">What tools and technologies were used to build your solution?</div>
+              <div class="upload-btn-wrapper">
+                  <div class="row">
+                      <div class="col-md-1">
+                          <div class="btn-upload">
+                              <img src="/images/mg-upload.svg" alt=""><span id="attach_hackathon_apk" style="display:none;"></span>
+                          </div>
+                          <input type="file" id="fileinput_hackathon_apk" name="myfile" />
+                      </div>
+                      <div class="col-md-11 upl-file-namesec">
+                          <div class="upl-wid-90">
+                              <div class="mpulse-filename">
+                                  <label id="fileListDetails_apk" class="filedetails"></label>
+                                  <span id="lblMessage_size_apk" class="ulpsucessmeg"></span>
+                              </div>
+                              <!--error message-->
+                              <div class="error-msg">
+                                  <div id="fileListDetails_Err_apk" class="filedetails"></div>
+                              </div>
+                          </div>
+                          <div class="upl-wid-10">
+                              <label class="col-md-1 upl-delete-btn"><a id="btnUpload_delete_apk" value="Delete"> X </a></label>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                  </div>
+                  <div class="row upload-secrow" id="progress-bar-apk" style="display:none;">
+                      <div class="col-md-11">
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                                   aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                  0%
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="upload-btn-sec">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <a id="btnUpload_apk" value="Upload" class="btn btn-primary"> Upload </a>
+                          </div>
+                          <div class="col-md-8">
+                              <!--sucess message-->
+                              <div class='lblmessage-row'>
+                                  <label id="lblMessage_apk" class="ulpsucessmeg"></label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="upl-supporttext"> Choose File Size 70MB limit " extension .apk allowed." </div>
+                  </div>
+              </div>
+          </div>
+
+          <!--upload-06-->
+          <div class="form-group edit-profile-left"></div>
+          <div class="clearfix"></div>
+
+          <div class="clearfix"></div>
+      </form>
+
+  </div>
+  <div class="clearfix"></div>
+<!--kanna end-->
+
+
+
+    <div class="wraper">
+
+        <header class="header">
+            <div class="container-fluid container-lg">
+                <nav class="navbar navbar-light ">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="assets/images/ooredoologo.svg" height="40" alt="" loading="OOREDOO">
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+
+        <section class="application-sec">
+            <div class="appbg-sec">
+                <div class="img-cont">
+                    <picture>
+                        <img src="assets/images/application_bg.svg" alt="" title="">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="container-fluid container-lg">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-sm-9">
+                        <div class="appmain-cont">
+                            <div class="appinner-cont">
+                                <div class="ban-text-sec">
+                                    <p class="ooredoo-text">OOREDOO</p>
+                                    <h1>2020 Internship Application</h1>
+                                </div>
+
+                                <form>
+
+                                    <div class="form-group">
+                                        <label>Country<span>*</span></label>
+                                        <select class="form-control">
+                                            <option>Select your country</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Name<span>*</span></label>
+                                        <input type="text" class="form-control" placeholder="Ryan Apusen">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>ID / Civil ID Number<span>*</span></label>
+                                        <input type="number" class="form-control" placeholder="288000000000">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Email<span>*</span></label>
+                                        <input type="email" class="form-control" placeholder="rapusen@ooredoo.com.kw">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Mobile Number<span>*</span></label>
+                                        <input type="number" class="form-control" placeholder="66366636">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Preferred Start Date<span>*</span></label>
+                                        <input type="date" class="form-control" placeholder="MM/DD/YYYY">
+                                    </div>
+
+
+
+                                    <div class="form-row">
+                                        <div class="form-group col-6">
+                                            <label>Internship Duration <span>*</span></label>
+                                            <input type="number" class="form-control" placeholder="000">
+                                        </div>
+
+                                        <div class="form-group col-6">
+                                            <label>&nbsp;</label>
+                                            <select class="form-control">
+                                                <option>Weeks</option>
+                                                <option>Months</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                  
+
+                                    <div class="form-group">
+                                        <label>Upload your ID / Civil ID <span>*</span></label>
+                                        <div class="file-bg">
+                                            
+
+
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                    <img class="form-close-img" src="assets/images/ic_form_close.svg" alt="">
+                                                  <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                                  <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                                                </div>
+
+                                                
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                                                </div>
+                                                <div class="file-sup">JPG, JPEG, PNG format</div>
+                                              </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+
+
+                                    <div class="fileupload-sec">                            
+                                        <div class="row">                                
+                                            <div class="col-md-6">
+                                                <!-- partial:index.partial.html -->
+                                                <div id="container-upload">
+                                                    <input id="uploadControl" type="file" v-on:change="uploadNewFile" multiple hidden>  
+                <div class="title">
+                  <button id="addFileButton" class="title__button" v-on:click="openFileDialog">Choose Video File</button>
+                  <p>Choose File Size 60-seconds limit .jpg, .png, .mp4, .avi, .webm, .3gp, etc. extensions</p>
+                </div>  
+                <div class="files">
+                  <template v-for="(file, key, index) in files">
+                    <div class="file" v-bind:class="getFileClassModifier(key)" v-bind:data-key="key">
+                      <div class="file__icon">
+                        <i class="fa fa-2x" v-bind:class="getFileIconClass(key)"></i>
+                      </div>
+              
+                      <div class="file__details">
+                        <div class="file__remove" v-on:click="removeFile(key)"><i class="fa fa-times"></i></div>
+                        <div class="file__name">{{file.name | truncateFileName}}</div>
+                        <template v-if="file.state === 'success'">
+                          <div class="file__actions"><a v-bind:href="file.url" target="_blank">View uploaded file</a></div>
+                        </template>
+                        <template v-else-if="file.state === 'error'">
+                          <div class="file__actions">File could not be uploaded!</div>
+                        </template>
+                        <template v-else>
+                          <div class="file__actions">{{file.eta | formatEta}}</div>
+                        </template>
+                      </div>
+              
+                      <div class="file__progress">
+                        <div class="file__progressbar" v-bind:style="file.progressStyle"></div>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+                
+                <!--div class="title">
+                  <h2 class="title__text">Valid File Uploads</h2>
+                </div-->
+                <ul>
+                  <template v-for="(file, key, index) in files">
+                    <li v-if="file.url !== false">
+                      {{file.name}} (<a v-bind:href="file.url">View</a>)
+                    </li>
+                  </template>
+                </ul>
+              </div>
+              <!-- partial -->
+            </div>
+            
+            <div class="col-md-6">
+                <div id="container-upload">
+                    <input id="uploadControl" type="file" v-on:change="uploadNewFile" multiple hidden>  
+            <div class="title">
+            <button id="addFileButton" class="title__button" v-on:click="openFileDialog">Choose File</button>
+            <p>Choose File Size 60-seconds limit .jpg, .png, .mp4, .avi, .webm, .3gp, etc. extensions</p>
+            </div>
+            
+            <div class="files">
+            <template v-for="(file, key, index) in files">
+            <div class="file" v-bind:class="getFileClassModifier(key)" v-bind:data-key="key">
+            <div class="file__icon">
+            <i class="fa fa-2x" v-bind:class="getFileIconClass(key)"></i>
+            <div class="">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div> 
+            </div>
+            </div>
+            
+            <div class="file__details">
+            <div class="file__remove" v-on:click="removeFile(key)"><i class="fa fa-times"></i></div>
+            <div class="file__name">{{file.name | truncateFileName}}</div>
+            <template v-if="file.state === 'success'">
+            <div class="file__actions"><a v-bind:href="file.url" target="_blank">View uploaded file</a></div>
+            </template>
+            <template v-else-if="file.state === 'error'">
+            <div class="file__actions">File could not be uploaded!</div>
+            </template>
+            <template v-else>
+            <div class="file__actions">{{file.eta | formatEta}}</div>
+            </template>
+            </div>
+            
+            <div class="file__progress">
+            <div class="file__progressbar" v-bind:style="file.progressStyle"></div>
+            </div>
+            </div>
+            </template>
+            </div>
+            
+            <!--div class="title">
+            <h2 class="title__text">Valid File Uploads</h2>
+            </div-->
+            <ul>
+            <template v-for="(file, key, index) in files">
+            <li v-if="file.url !== false">
+            {{file.name}} (<a v-bind:href="file.url">View</a>)
+            </li>
+            </template>
+            </ul>
+            </div>
+            </div>
+            
+            </div>
+                                    </div>
+
+
+
+
+                                    
+
+
+
+
+                                   
+                                    <div class="sub-btn-cont text-right">
+                                        <a href="#" class="btn btn-outline" type="submit">Cancel</a>
+
+                                        <a href="#" class="btn btn-primary" type="submit" data-toggle="modal"
+                                            data-target="#kws-confirm">Submit
+                                            form</a>
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <footer>
+        </footer>
+
+
+
+    </div>
+
+  
+
+    <!-- popup-1 :: kws-confirmation :: start -->
+    <div class="modal fade kws-modal" id="kws-confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-icon"> <img src="assets/images/kws-ic-confirm.png" alt="confirmation" /></div>
+                <div class="modal-header">
+                    <h5 class="modal-title dark-blue" id="exampleModalLabel">Application submitted</h5>
+                </div>
+                <div class="modal-body"> We will get back to you within 10-14 working days to notify you of the final
+                    decision. Please check your email for confirmation</div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--/* -- jQuery JS V 3.5.1 -- */-->
+    <script type="text/javascript" src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <!--/* -- Bootstrap v4.5.3 -- */-->
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--/* -- JS * Swiper 6.3.5 -- */-->
+    <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--/* -- JS * Custom Scripts -- */-->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <script type="text/javascript" src="assets/js/bs-custom-file-input.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/imi-upload.js"></script>
+
+    <!--/* -- JS * Page level Scripts -- */-->
+    <!-- Initialize Swiper -->
+    <script>
+        $(document).ready(function () {
+            bsCustomFileInput.init()
+        });
+    </script>
+
+
+</body>
+
+</html>
